@@ -84,9 +84,9 @@
   .muted { color: var(--muted); font-size: 0.9rem; }
   ul { padding-left: 20px; }
   a { color: var(--accent); }
-  [lang="en"] { display: none; }
-  body.show-en [lang="fr"] { display: none; }
-  body.show-en [lang="en"] { display: block; }
+  [data-lang="en"] { display: none; }
+  body.show-en [data-lang="fr"] { display: none; }
+  body.show-en [data-lang="en"] { display: block; }
 </style>
 </head>
 <body>
@@ -100,7 +100,7 @@
   </header>
 
   <div class="card">
-    <div lang="fr">
+    <div data-lang="fr">
       <p class="muted">Dernière mise à jour : 30 juillet 2026</p>
 
       <h2>Aucune donnée collectée</h2>
@@ -128,7 +128,7 @@
       <p>Pour toute question concernant cette politique de confidentialité : <a href="mailto:peyrousemickael@gmail.com">peyrousemickael@gmail.com</a></p>
     </div>
 
-    <div lang="en">
+    <div data-lang="en">
       <p class="muted">Last updated: July 30, 2026</p>
 
       <h2>No data collected</h2>
