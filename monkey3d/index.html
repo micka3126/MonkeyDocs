@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monkey3d — Politique de confidentialité / Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f5f8fc;
+    --card: #ffffff;
+    --text: #14233a;
+    --muted: #55657c;
+    --accent: #1f6fd6;
+    --on-accent: #ffffff;
+    --border: #d8e2ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c1626;
+      --card: #13213a;
+      --text: #e6eefa;
+      --muted: #9fb0c8;
+      --accent: #6fb1ff;
+      --on-accent: #0a1424;
+      --border: #263a59;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+  h1 { font-size: 1.4rem; margin: 0; }
+  .lang-switch { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+  .lang-switch button { border: none; background: transparent; color: var(--text); padding: 6px 16px; font-size: 0.85rem; cursor: pointer; }
+  .lang-switch button.active { background: var(--accent); color: var(--on-accent); font-weight: 600; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; }
+  h2 { font-size: 1.05rem; margin-top: 28px; margin-bottom: 8px; }
+  h2:first-child { margin-top: 0; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.9rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  tr:last-child td { border-bottom: 0; }
+  th { color: var(--muted); font-weight: 600; }
+  [data-lang="en"] { display: none; }
+  body.show-en [data-lang="fr"] { display: none; }
+  body.show-en [data-lang="en"] { display: block; }
+  @media (max-width: 480px) { .card { padding: 20px 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Monkey3d</h1>
+    <div class="lang-switch">
+      <button id="btn-fr" class="active" onclick="setLang('fr')">Français</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <div class="card">
+    <div data-lang="fr">
+      <p class="muted">Dernière mise à jour : 9 octobre 2026 · Application Android <code>com.monkey3d.app</code></p>
+
+      <p>Monkey3d crée des pièces à fabriquer (impression 3D, fraisage, découpe, tournage) à partir d'une description écrite, avec l'intelligence artificielle de votre choix : Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google) ou Le Chat (Mistral AI). Cette page explique quelles données l'application utilise et où elles vont.</p>
+
+      <h2>Aucune donnée collectée par Monkey3d</h2>
+      <p>Monkey3d n'a pas de serveur. L'éditeur de l'application ne collecte, ne reçoit et ne stocke aucune donnée personnelle : pas de compte, pas de statistiques d'utilisation, pas de publicité, pas de SDK de suivi.</p>
+
+      <h2>Données et destinations</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Donnée</th><th>Où elle va</th><th>Quand</th></tr></thead>
+          <tbody>
+            <tr><td>Description de la pièce, code OpenSCAD, messages d'erreur</td><td>Le fournisseur d'IA que vous avez choisi</td><td>Quand vous lancez une génération ou une modification</td></tr>
+            <tr><td>Photo de référence (facultative)</td><td>Le fournisseur d'IA que vous avez choisi</td><td>Seulement si vous ajoutez une photo</td></tr>
+            <tr><td>Images de la pièce générée (vérification visuelle)</td><td>Le fournisseur d'IA que vous avez choisi</td><td>Seulement si vous lancez ou activez la vérification visuelle</td></tr>
+            <tr><td>Clé API</td><td>Uniquement le fournisseur concerné</td><td>Pour authentifier vos demandes</td></tr>
+            <tr><td>Bibliothèque, projets, réglages, journal de diagnostic</td><td>Votre appareil uniquement</td><td>Toujours ; supprimés avec l'application</td></tr>
+            <tr><td>Achat de Monkey3d Pro</td><td>Google Play</td><td>Lors de l'achat ou de sa restauration</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Mode « app de mon IA »</h2>
+      <p>Monkey3d prépare un texte (et, si vous en avez ajouté une, une photo) que vous transmettez vous-même à l'application de votre IA par le menu Partager d'Android. Vous partagez ensuite la réponse vers Monkey3d. Monkey3d ne se connecte pas à votre compte et n'a pas accès à vos conversations.</p>
+
+      <h2>Mode clé API</h2>
+      <p>L'application utilise votre propre clé API (Anthropic, OpenAI, Google ou Mistral AI). La clé est chiffrée et stockée uniquement sur votre appareil (Keystore Android). Elle n'est envoyée qu'au fournisseur concerné. Vous pouvez la supprimer à tout moment dans les réglages.</p>
+      <p>Les demandes partent directement de votre appareil vers l'API du fournisseur, sans intermédiaire, en connexion chiffrée (HTTPS). Elles sont traitées selon les conditions et la politique de confidentialité de votre compte chez ce fournisseur. N'incluez pas d'informations personnelles dans vos descriptions ni dans vos photos.</p>
+
+      <h2>Photos</h2>
+      <p>Monkey3d ne demande pas l'autorisation d'accéder à l'appareil photo ni à vos fichiers. Une photo n'est utilisée que si vous la prenez ou la choisissez vous-même, avec l'appareil photo ou le sélecteur d'Android. Une version réduite est conservée dans votre bibliothèque, sur l'appareil.</p>
+
+      <h2>Données conservées sur l'appareil</h2>
+      <ul>
+        <li>La bibliothèque : descriptions, code des pièces, vignettes, photos réduites, noms, favoris et projets.</li>
+        <li>Vos réglages : langue, procédé, imprimante, matériaux, calibrages.</li>
+        <li>Un journal de diagnostic (erreurs et blocages de l'application). Il ne quitte l'appareil que si vous le copiez vous-même pour le transmettre.</li>
+      </ul>
+      <p>Ces données sont supprimées quand vous désinstallez l'application ou effacez ses données.</p>
+
+      <h2>Partage de pièces</h2>
+      <p>Quand vous partagez une pièce (fichier .monkey3d, STL, plan, dossier de fabrication), c'est vous qui choisissez le destinataire avec le menu Partager d'Android. Monkey3d n'envoie rien de lui-même.</p>
+
+      <h2>Achats</h2>
+      <p>L'achat de Monkey3d Pro est traité par Google Play. Monkey3d ne reçoit aucune donnée de paiement. L'application demande seulement à Google Play si l'achat a été effectué.</p>
+
+      <h2>Enfants</h2>
+      <p>Monkey3d ne s'adresse pas aux enfants de moins de 13 ans.</p>
+
+      <h2>Modifications de cette politique</h2>
+      <p>Cette page peut évoluer avec l'application. La date de mise à jour en haut de page indique la dernière version.</p>
+
+      <h2>Contact</h2>
+      <p>Pour toute question sur vos données : <a href="mailto:peyrousemickael@gmail.com">peyrousemickael@gmail.com</a></p>
+    </div>
+
+    <div data-lang="en">
+      <p class="muted">Last updated: October 9, 2026 · Android app <code>com.monkey3d.app</code></p>
+
+      <p>Monkey3d creates parts to manufacture (3D printing, CNC milling, 2D cutting, lathe turning) from a written description, using the artificial intelligence of your choice: Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google) or Le Chat (Mistral AI). This page explains which data the app uses and where it goes.</p>
+
+      <h2>No data collected by Monkey3d</h2>
+      <p>Monkey3d has no server. The developer does not collect, receive or store any personal data: no account, no usage analytics, no advertising, no tracking SDK.</p>
+
+      <h2>Data and destinations</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Data</th><th>Where it goes</th><th>When</th></tr></thead>
+          <tbody>
+            <tr><td>Part description, OpenSCAD code, error messages</td><td>The AI provider you chose</td><td>When you start a generation or a modification</td></tr>
+            <tr><td>Reference photo (optional)</td><td>The AI provider you chose</td><td>Only if you add a photo</td></tr>
+            <tr><td>Images of the generated part (visual check)</td><td>The AI provider you chose</td><td>Only if you start or enable the visual check</td></tr>
+            <tr><td>API key</td><td>Only the matching provider</td><td>To authenticate your requests</td></tr>
+            <tr><td>Library, projects, settings, diagnostics log</td><td>Your device only</td><td>Always; deleted with the app</td></tr>
+            <tr><td>Monkey3d Pro purchase</td><td>Google Play</td><td>When you buy or restore it</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>"My AI app" mode</h2>
+      <p>Monkey3d prepares a text (and a photo, if you added one) that you send yourself to your AI app through the Android Share menu. You then share the answer back to Monkey3d. Monkey3d does not connect to your account and has no access to your conversations.</p>
+
+      <h2>API key mode</h2>
+      <p>The app uses your own API key (Anthropic, OpenAI, Google or Mistral AI). The key is encrypted and stored only on your device (Android Keystore). It is only sent to the matching provider. You can delete it at any time in the settings.</p>
+      <p>Requests go directly from your device to the provider's API, with no intermediary, over an encrypted connection (HTTPS). They are processed under the terms and privacy policy of your account with that provider. Do not include personal information in your descriptions or photos.</p>
+
+      <h2>Photos</h2>
+      <p>Monkey3d does not request camera or file access permissions. A photo is only used if you take or pick it yourself, with the Android camera or picker. A reduced copy is kept in your library, on the device.</p>
+
+      <h2>Data kept on the device</h2>
+      <ul>
+        <li>The library: descriptions, part code, thumbnails, reduced photos, names, favorites and projects.</li>
+        <li>Your settings: language, process, printer, materials, calibrations.</li>
+        <li>A diagnostics log (app errors and freezes). It only leaves the device if you copy it yourself to send it.</li>
+      </ul>
+      <p>This data is deleted when you uninstall the app or clear its data.</p>
+
+      <h2>Sharing parts</h2>
+      <p>When you share a part (.monkey3d file, STL, drawing, manufacturing package), you choose the recipient with the Android Share menu. Monkey3d sends nothing on its own.</p>
+
+      <h2>Purchases</h2>
+      <p>The Monkey3d Pro purchase is handled by Google Play. Monkey3d receives no payment data. The app only asks Google Play whether the purchase was made.</p>
+
+      <h2>Children</h2>
+      <p>Monkey3d is not directed at children under 13.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>This page may change along with the app. The update date at the top of the page shows the latest version.</p>
+
+      <h2>Contact</h2>
+      <p>For any question about your data: <a href="mailto:peyrousemickael@gmail.com">peyrousemickael@gmail.com</a></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.body.classList.toggle('show-en', lang === 'en');
+    document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('m3d-privacy-lang', lang); } catch (e) {}
+  }
+  (function () {
+    try {
+      var saved = localStorage.getItem('m3d-privacy-lang');
+      if (saved === 'en') { setLang('en'); return; }
+      if (saved === 'fr') { return; }
+    } catch (e) {}
+    var nav = (navigator.language || '').toLowerCase();
+    if (nav.indexOf('fr') !== 0) { setLang('en'); }
+  })();
+</script>
+</body>
+</html>
